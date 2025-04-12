@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/output.css">
     <style>
-        
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } 
     </style>
 </head>
 <body class="p-[0] m-[0] overflow-x-hidden">
-<header class=' fixed top-0 z-50 w-screen'>
-    <nav class="h-[100px] flex justify-between w-full items-center px-6 lg:px-28">
-        <img class="h-full object-cover object-center" src="/assets/Arshan_Medical_Complex_Red_Logo-removebg-preview.png" alt="">
-        <div><ul class="flex gap-4 lg:gap-16 text-white text-2xl md:text-3xl">
-            <li>one</li>
-            <li>one</li>
-            <li>one</li>
-        </ul></div>
-    </nav>
-</header>
+    <!------------------------------------ Header Section Start -------------------------->
+    <header class=' fixed top-0 z-50 w-screen'>
+        <nav class="h-[70px] flex justify-between w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 items-center px-6 lg:px-28">
+            <img class="h-full object-cover object-center" src="/assets/Arshan_Medical_Complex_Red_Logo-removebg-preview.png" alt="clinic-logo">
+            <div><ul class="flex gap-4 lg:gap-16 text-white text-2xl md:text-3xl">
+                <li>one</li>
+                <li>one</li>
+                <li>one</li>
+            </ul></div>
+        </nav>
+    </header>
+    <!------------------------------------ Header Section End -------------------------->
 <main>
     <!----------------------------------- Hero Secion Start ------------------------------->
     <section class="w-screen h-screen relative z-10">
         <div class="w-full h-full overflow-hidden">
-            <img class="w-full h-full object-cover object-[calc(50%-40px)_center] md:object-center" src="/assets/marcelo-leal-6pcGTJDuf6M-unsplash.jpg" alt="" srcset="">
+            <img class="w-full h-full object-cover object-[calc(50%-40px)_center] md:object-center" src="/assets/marcelo-leal-6pcGTJDuf6M-unsplash.jpg" alt="clinic-cover-picture" srcset="">
 
         </div>
         <div class="w-full h-full bg-[#110b0b88] absolute top-0 flex justify-center items-start px-10 md:px-36 flex-col">
@@ -33,20 +51,77 @@
         </div>
     <!----------------------------------- Hero Secion End ------------------------------->
     <!----------------------------------- About Secion Start ------------------------------->
-    <section class="w-screen h-screen bg-amber-400 grid place-items-center">
-        <div class="bg-amber-700 w-[80%] grid grid-cols-1 gap-5 lg:grid-cols-2 p-4">
-            <div class="w-full bg-red-800 h-[400px]">hi</div>
-            <div class="w-full h-[400px] overflow-hidden">
-                <img class="h-full" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="" srcset="">
+    <section class="w-screen bg-[#e9e5e2] grid place-items-center py-25">
+        <div class=" w-[90%] bg-[#daf1ea] rounded-[10px] grid grid-cols-1 gap-5 lg:grid-cols-2 py-3 md:py-0">
+            <div class="w-full h-[500px] text-[#2E3F42] flex flex-col gap-6 justify-center  items-center p-5">
+                <h2 class="text-7xl font-extrabold">About</h2>
+                <p class="text-[18px] lg:text-[22px] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum incidunt deserunt magni illum amet. Doloremque quo corrupti itaque autem reprehenderit, est repellat id iure. Eum laboriosam temporibus quasi atque impedit dolorem ut dolores minima iste praesentium. Aspernatur laudantium earum  consectetur adipisicing elit. Laborum incidunt deserunt magni illum amet. Doloremque quo corrupti itaque autem reprehenderit, est repellat </p>
+            </div>
+            <div class="w-full h-[500px] hidden lg:block overflow-hidden rounded-[5px]">
+                <img class="h-full w-full" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="doctors-picture" srcset="">
             </div>
         </div>
     </section>
     <!----------------------------------- About Secion End ------------------------------->
     <!----------------------------------- Testonomial Secion Start ------------------------------->
-    <section>
-
+    <section class="bg-[#e9e5e2] w-screen py-11 flex justify-center items-center flex-col gap-12 lg:gap-21">
+        <h2 class="text-6xl font-extrabold text-[#2E3F42]">Testonimials</h2>
+        <div class="swiper mySwiper w-[90%] lg:w-[800px] h-[350px] rounded-2xl">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide grid grid-cols-6 w-full">
+                <div class=" h-full w-full col-span-2 hidden lg:block">
+                    <img class="" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-[#daf1ea] py-17  h-full w-full col-span-4 flex flex-col justify-center gap-6 px-11">
+                    <h3 class="text-5xl font-bold">Alina Javed</h3>
+                    <p class="text-[#2E3F42]">Lorem ipsum dolor, sit amet consectetur adipisicing el obcaecati, quod, iure quibusdam et, rerum unde iusto corporis maxime culpa quidem odio consectetur mollitia.</p>
+                    <h4 class="text-2xl font-semibold text-right text-[#CF1111]">Heart Pattient</h4>
+                </div>
+                
+              </div>
+              <div class="swiper-slide grid grid-cols-6 w-full">
+                <div class=" h-full w-full col-span-2 hidden lg:block">
+                    <img class="" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-[#daf1ea] py-17  h-full w-full col-span-4 flex flex-col justify-center gap-6 px-11">
+                    <h3 class="text-5xl font-bold">Alina Javed</h3>
+                    <p class="text-[#2E3F42]">Lorem ipsum dolor, sit amet consectetur adipisicing el obcaecati, quod, iure quibusdam et, rerum unde iusto corporis maxime culpa quidem odio consectetur mollitia.</p>
+                    <h4 class="text-2xl font-semibold text-right text-[#CF1111]">Heart Pattient</h4>
+                </div>
+                
+              </div>
+              <div class="swiper-slide grid grid-cols-6 w-full">
+                <div class=" h-full w-full col-span-2 hidden lg:block">
+                    <img class="" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-[#daf1ea] py-17  h-full w-full col-span-4 flex flex-col justify-center gap-6 px-11">
+                    <h3 class="text-5xl font-bold">Alina Javed</h3>
+                    <p class="text-[#2E3F42]">Lorem ipsum dolor, sit amet consectetur adipisicing el obcaecati, quod, iure quibusdam et, rerum unde iusto corporis maxime culpa quidem odio consectetur mollitia.</p>
+                    <h4 class="text-2xl font-semibold text-right text-[#CF1111]">Heart Pattient</h4>
+                </div>
+                
+              </div>
+              <div class="swiper-slide grid grid-cols-6 w-full">
+                <div class=" h-full w-full col-span-2 hidden lg:block">
+                    <img class="" src="/assets/anna-keibalo-9vH-wWpUP3g-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="bg-[#daf1ea] py-17  h-full w-full col-span-4 flex flex-col justify-center gap-6 px-11">
+                    <h3 class="text-5xl font-bold">Alina Javed</h3>
+                    <p class="text-[#2E3F42]">Lorem ipsum dolor, sit amet consectetur adipisicing el obcaecati, quod, iure quibusdam et, rerum unde iusto corporis maxime culpa quidem odio consectetur mollitia.</p>
+                    <h4 class="text-2xl font-semibold text-right text-[#CF1111]">Heart Pattient</h4>
+                </div>
+                
+              </div>
+        
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        
     </section>
     <!----------------------------------- Testonomial Secion End ------------------------------->
 </main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/src/script.js"></script>
 </body>
 </html>
